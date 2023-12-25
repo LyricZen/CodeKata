@@ -27,41 +27,41 @@ public class S13 {
 //        return answer;
 //    }
 
-    //다른 풀이
-    // 1)
-    public int solution(int n) {
-        int answer = 0;
-
-        while(true){
-            answer+=n%10;
-            if(n<10)
-                break;
-            n=n/10;
-        }
-        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
-        System.out.println("Hello Java");
-        return answer;
-    }
-
-    // 2)
-    public int solution(int n) {
-        int answer = 0;
-
-        while (n != 0) {
-            answer += n % 10;
-            n /= 10;
-        }
-
-        return answer;
-    }
-
-    // 3) 문자 배열 사용
-    public int solution(int n) {
-        int answer = 0;
-        String[] array = String.valueOf(n).split("");
-        for(String s : array){
-            answer += Integer.parseInt(s);
-        }
-        return answer;
-    }
+//    //다른 풀이
+//    // 1)
+//    public int solution(int n) {
+//        int answer = 0;
+//
+//        while(true){
+//            answer+=n%10;
+//            if(n<10)
+//                break;
+//            n=n/10;
+//        }
+//        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+//        System.out.println("Hello Java");
+//        return answer;
+//    }
+//
+//    // 2)
+//    public int solution(int n) {
+//        int answer = 0;
+//
+//        while (n != 0) {
+//            answer += n % 10;
+//            n /= 10;
+//        }
+//
+//        return answer;
+//    }
+//
+//    // 3) 문자 배열 사용
+//    public int solution(int n) {
+//        int answer = 0;
+//        String[] array = String.valueOf(n).split("");
+//        for(String s : array){
+//            answer += Integer.parseInt(s);
+//        }
+//        return answer;
+//    }
 }
